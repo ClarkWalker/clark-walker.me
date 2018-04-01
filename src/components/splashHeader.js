@@ -5,7 +5,7 @@ class SplashHeader extends Component {
     return(
       <div id="splash">
         <header id={ this.props.splash_style }>
-          <h1>Clark Walker</h1>
+          <h1><a id="a-title" href="/">Clark Walker</a></h1>
           <nav className="nav">
             <a href="/about">about me</a>
             <a href="/fun">fun stuff</a>

@@ -1,0 +1,24 @@
+#about {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#about main p{
+  margin: 0px;
+  padding: 0px 10px;
+  text-align: left;
+}
+
+#about main .profile-pic {
+  max-width: 75%;
+}
+
+@media (orientation:landscape) {
+  #about main .profile-pic {
+    width: 196px;
+    float: left;
+    margin-top: 3px;
+    padding: 0px 10px;
+  }
+
+}
