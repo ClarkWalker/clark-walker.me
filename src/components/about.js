@@ -1,22 +1,15 @@
 import React, { Component } from "react";
 import "./about.css";
+import SplashHeader from "./splashHeader.js"
 
-class Splash extends Component {
+class About extends Component {
   render(){
     return(
       <div id="about">
-        <header>
-          <h1>Clark Walker</h1>
-          <div className="nav">
-            <a href="/about">about me</a>
-            <a href="/fun">fun stuff</a>
-            <a href="/contact">contact me</a>
-            <a href="/portfolio">portfolio</a>
-          </div>
-        </header>
+        <SplashHeader splash_style="top"/>
       </div>
     );
   }
 }
 
-export default Splash;
+export default About;
