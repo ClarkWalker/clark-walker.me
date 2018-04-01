@@ -1,16 +1,18 @@
 import React, { Component } from "react";
+import { Link } from 'react-router';
 
 class SplashHeader extends Component {
   render(){
     return(
       <div id="splash">
-        <header id={ this.props.splash_style }>
-          <h1><a id="a-title" href="/">Clark Walker</a></h1>
+        <header className={ this.props.splash_style }>
+          <h1><Link className="Link" id="Link-title" to="/">Clark Walker</Link></h1>
           <nav className="nav">
-            <a href="/about">about me</a>
-            <a href="/fun">fun stuff</a>
-            <a href="/contact">contact me</a>
-            <a href="/portfolio">portfolio</a>
+            <Link className="Link" to="/bio">bio</Link>
+            {/* <Link to="/fun">fun stuff</Link> */}
+            <Link className="Link" to="/blog">blog</Link>
+            <Link className="Link" to="/contact">contact</Link>
+            <Link className="Link" to="/portfolio">portfolio</Link>
           </nav>
         </header>
       </div>

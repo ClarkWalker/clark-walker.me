@@ -1,4 +1,4 @@
-#splash #center {
+#splash .center {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -6,14 +6,14 @@
   min-height: 100vh;
 }
 
-#splash #top {
+#splash .top {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 10px;
 }
 
-#splash #a-title {
+#splash #Link-title {
   color: inherit;
   text-decoration: none;
   text-overflow: ellipsis;
@@ -24,10 +24,10 @@
   margin: 10px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
-#splash .nav a {
+#splash .nav .Link {
   margin: 0px 6px;
   color: #8b8;
   text-decoration: none;

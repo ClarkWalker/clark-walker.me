@@ -6,14 +6,33 @@
 #about main p{
   margin: 0px;
   padding: 0px 10px;
-  text-align: left;
+  text-align: justify;
 }
 
 #about main .profile-pic {
-  max-width: 75%;
+  max-width: 320px;
+  width: 75%;
+}
+
+@media (orientation:portrait) {
+  #about main p {
+    max-width: 320px;
+    width: 75%;
+  }
+
+  #about main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }
 
 @media (orientation:landscape) {
+  #about main {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
   #about main .profile-pic {
     width: 196px;
     float: left;

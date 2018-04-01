@@ -10,8 +10,9 @@ class App extends Component {
       <div className="App">
         <Router history={browserHistory}>
           <Route path="/" component={Splash}/>
-          <Route path="/about" component={About}/>
+          <Route path="/bio" component={About}/>
           <Route path="/fun" component={Splash}/>
+          <Route path="/blog" component={Splash}/>
           <Route path="/contact" component={Splash}/>
           <Route path="/portfolio" component={Splash}/>
         </Router>
